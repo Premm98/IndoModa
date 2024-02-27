@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:indi_moda/mongo_query/mongo_query.dart';
 import 'package:indi_moda/product_card.dart';
 import 'package:indi_moda/product_details_page.dart';
-import 'package:indi_moda/products_data.dart';
+// import 'package:indi_moda/products_data.dart';
 
 class ProductList extends StatefulWidget {
   const ProductList({super.key});
@@ -73,7 +74,7 @@ class _ProductListState extends State<ProductList> {
               child: ListView.builder(
                 itemCount: products.length,
                 itemBuilder: (context, index) {
-                  final product = products[index];
+                  final product = Map<String, Object>.from(products[index]);
                   return GestureDetector(
                     onTap: () {
                       Navigator.of(context)

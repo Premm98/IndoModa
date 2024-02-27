@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:indi_moda/home_page.dart';
+import 'package:indi_moda/mongo_query/mongo_query.dart';
 
-void main() {
+void main() async {
+  await connectToMongoDB();
   runApp(const MyApp());
 }
 
