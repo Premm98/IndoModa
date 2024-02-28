@@ -83,7 +83,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
           ),
         ),
       ),
-      floatingActionButton: Container(
+      floatingActionButton: SizedBox(
         width: double.infinity,
         height: 50,
         child: ElevatedButton(

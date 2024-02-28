@@ -39,7 +39,7 @@ class SettingPage extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: Container(
+      floatingActionButton: SizedBox(
         width: double.infinity,
         child: ElevatedButton(
           child: const Text('Save Details'),
